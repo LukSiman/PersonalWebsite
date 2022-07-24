@@ -9,6 +9,14 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
 import { ProjectPageComponent } from './components/project-page/project-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: 'contacts', component: ContactPageComponent},
+  { path: 'projects', component: ProjectPageComponent },
+  { path: '', component: MainPageComponent},
+  { path: '**', component: MainPageComponent}
+];
 
 @NgModule({
   declarations: [
@@ -20,6 +28,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ProjectPageComponent
   ],
   imports: [
+    RouterModule.forRoot(routes),
     BrowserModule,
     AppRoutingModule,
     NgbModule
