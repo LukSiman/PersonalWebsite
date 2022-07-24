@@ -1,0 +1,19 @@
+a {
+    width: 32%;
+    height: 3em;
+    line-height: 3em;
+    color: white;
+    &:hover {
+        color:black;
+        font-weight: bold;
+        background-color: rgb(190, 255, 11);
+    }
+    &:nth-child(2){
+        border: 1px solid white;
+        border-width: 0px 2px 0px 2px;
+    }
+}
+
+.navbar{
+    border-radius: 4px;
+}
