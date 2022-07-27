@@ -1,0 +1,9 @@
+p{
+    margin: 0px;
+}
+
+img{
+    &:hover{
+        transform: scale(1.1);
+    }
+}
