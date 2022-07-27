@@ -3,6 +3,7 @@ a {
     height: 3em;
     line-height: 3em;
     color: white;
+    font-weight: bold;
     &:hover {
         color:black;
         font-weight: bold;
@@ -12,4 +13,10 @@ a {
         border: 1px solid white;
         border-width: 0px 2px 0px 2px;
     }
+}
+
+.active-link{
+    color:black;
+    font-weight: bold;
+    background-color: rgb(157, 180, 94);
 }
