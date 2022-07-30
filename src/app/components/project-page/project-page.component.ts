@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectPageComponent implements OnInit {
 
-  constructor() { }
+  images: String[] = [];
+
+  constructor() { 
+    this.images = [
+      "./assets/images/PMlogin.png",
+      "./assets/images/PMmain.png",
+      "./assets/images/PMcreate.png",
+    ];
+  }
 
   ngOnInit(): void {
   }
