@@ -1,0 +1,35 @@
+ngb-carousel {
+    border: solid 1px;
+    width: 40%;
+
+    img {
+        width: 100%;
+        height: 20vh;
+        object-fit: contain;
+    }
+}
+
+.projectInformation {
+    width: 58%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+:host ::ng-deep .carousel-control-next-icon,
+:host ::ng-deep .carousel-control-prev-icon {
+    filter: invert(1);
+}
+
+:host ::ng-deep .carousel-indicators button {
+    filter: invert(1);
+}
+
+@media only screen and (max-width: 575px) {
+    ngb-carousel {
+        width: 100%;
+    }
+
+    .projectInformation {
+        width: 100%;
+    }
+}
