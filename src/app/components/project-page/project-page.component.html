@@ -1,6 +1,6 @@
 <h1>Personal projects</h1>
 
-<div class="d-flex flex-column flex-sm-row justify-content-between container-fluid p-0 projectContainer">
+<div class="d-flex flex-column flex-sm-row justify-content-between container-fluid p-0">
     <div class="projectInformation">
         <a href="lukassimanavicius.net" target="_blank">
             <h2>Project manager:</h2>
@@ -15,11 +15,11 @@
             Projects can have names, descriptions,
             dates, statuses, tasks and images.
         </p>
-        <a href="lukassimanavicius.net" target="_blank">Check the project</a>
+        <a href="https://lukassimanavicius.net" target="_blank">Check out the project</a>
         <br>
-        <a href="github.com/LukSiman/ProjectManager" target="_blank">GitHub</a>
+        <a href="https://github.com/LukSiman/ProjectManager" target="_blank">GitHub</a>
     </div>
-    <ngb-carousel class="position-relative img-container">
+    <ngb-carousel>
         <ng-template ngbSlide *ngFor="let tempImage of images">
             <div class="p-2">
                 <img src="{{tempImage}}" alt=" project image">
