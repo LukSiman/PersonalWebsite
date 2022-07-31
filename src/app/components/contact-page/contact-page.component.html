@@ -11,5 +11,36 @@
         <li>Use the contact form below:</li>
     </ul>
 
+    <div class="p-3 border border-2 rounded">
+        <form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)">
+            <div class="form-group mb-2">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Enter your email"
+                    formControlName="email">
+            </div>
+            <div class="form-group mb-2">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" name="fullName" placeholder="Enter your full name"
+                    formControlName="fullName">
+            </div>
+            <div class="form-group mb-2">
+                <label for="comment">Comment</label>
+                <textarea class="form-control" formControlName="comment" name="comment"
+                    placeholder="Enter your comment">
+        </textarea>
+                <div *ngIf="formGroup.get('comment')?.invalid && (formGroup.get('comment')?.dirty || formGroup.get('comment')?.touched)"
+                    class="alert alert-danger">
+                    <div *ngIf="formGroup.get('comment')?.errors?.['required'] || formGroup.get('comment')?.errors?.['notOnlyWhitespace']">
+                        Field is required.
+                    </div>
+                    <div *ngIf="formGroup.get('comment')?.errors?.['minlength']">
+                        Comment must be at least 10 characters long.
+                    </div>
+                </div>
 
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="!formGroup.valid">Submit</button>
+            <button type="button" class="btn btn-danger ms-2" (click)="formCleaner()">Clear</button>
+        </form>
+    </div>
 </div>
