@@ -10,6 +10,9 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
 import { ProjectPageComponent } from './components/project-page/project-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { EmailService } from './services/email.service';
 
 const routes: Routes = [
   { path: 'contacts', component: ContactPageComponent},
@@ -31,9 +34,11 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
