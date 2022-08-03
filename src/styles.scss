@@ -2,8 +2,31 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
-// @import '~reset-css/sass/reset.scss';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+// Main color palette:
+// #262225
+// #29354B
+// #4C8891
+// #A0C8C3
+// #ECEBE9
+
 
 html {
-    overflow-y:scroll;
+    overflow-y: scroll;    
+}
+
+body {
+    background-color: #A0C8C3;
+    font-family: Ubuntu, Verdana, sans-serif;
+}
+
+a:link {
+    color: #29354B;
+    font-weight: bold;
+}
+
+a:visited  {
+    color: #29354B;
 }

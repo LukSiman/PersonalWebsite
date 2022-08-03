@@ -1,4 +1,4 @@
-<div class="container-fluid p-2 border border-3 rounded">
+<div id="contacts" class="container-fluid p-2 border border-3 rounded shadow">
     <h1>Contact details</h1>
     <p class="m-0">You can find me:</p>
     <ul>
@@ -11,7 +11,7 @@
         <li>Use the contact form below:</li>
     </ul>
 
-    <div class="p-3 border border-2 rounded">
+    <div id="form" class="p-3 border border-2 rounded shadow">
         <form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)">
             <div class="form-group mb-2">
                 <label for="email">Email</label>
@@ -39,7 +39,7 @@
                 </div>
 
             </div>
-            <button type="submit" class="btn btn-primary" [disabled]="!formGroup.valid">Submit</button>
+            <button type="submit" id="submit" class="btn" [disabled]="!formGroup.valid">Submit</button>
             <button type="button" class="btn btn-danger ms-2" (click)="formCleaner()">Clear</button>
         </form>
     </div>

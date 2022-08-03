@@ -11,3 +11,10 @@ p{
     text-align: justify;
     text-justify: inter-word;
 }
+
+div{
+    &.container-fluid{
+        background-color: #ECEBE9;
+        color: #262225;
+    }
+}

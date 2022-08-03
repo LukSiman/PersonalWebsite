@@ -1,41 +1,44 @@
-<h1 class="p-2 border border-3 rounded mb-3">Personal projects</h1>
+<h1 class="p-2 border border-3 rounded mb-3 shadow">Personal projects</h1>
 
-<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
-    <ngb-panel>
-        <ng-template ngbPanelTitle>
-            <a href="lukassimanavicius.net" target="_blank">
-                <h2>Project manager</h2>
-            </a>
-        </ng-template>
-        <ng-template ngbPanelContent>
-            <div
-                class="d-flex flex-column flex-sm-row justify-content-between container-fluid p-0">
-                <div class="projectInformation">
-                    <p class="mb-1">A full stack web app using Java Spring Boot backend REST API, Angular frontend with Bootstrap
-                        stylings and
-                        MySQL database.
+<div class="shadow">
+    <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+        <ngb-panel>
+            <ng-template ngbPanelTitle>
+                <a href="lukassimanavicius.net" target="_blank">
+                    <h2>Project manager</h2>
+                </a>
+            </ng-template>
+            <ng-template ngbPanelContent>
+                <div class="d-flex flex-column flex-sm-row justify-content-between container-fluid p-0">
+                    <div class="projectInformation">
+                        <p class="mb-1">A full stack web app using Java Spring Boot backend REST API, Angular frontend
+                            with Bootstrap
+                            stylings and
+                            MySQL database.
+                            <br>
+                            Hosted on a DigitalOcean VPS.
+                            <br>
+                            Registered users can add, remove and edit their personal projects.
+                            <br>
+                            Projects can have names, descriptions,
+                            dates, statuses, tasks and images.
+                        </p>
+                        <a href="https://lukassimanavicius.net" target="_blank">Check out the project</a>
                         <br>
-                        Hosted on a DigitalOcean VPS.
-                        <br>
-                        Registered users can add, remove and edit their personal projects.
-                        <br>
-                        Projects can have names, descriptions,
-                        dates, statuses, tasks and images.
-                    </p>
-                    <a href="https://lukassimanavicius.net" target="_blank">Check out the project</a>
-                    <br>
-                    <a href="https://github.com/LukSiman/ProjectManager" target="_blank">GitHub</a>
-                    <p class="mt-1"><b>Technologies:</b> Java, HTML, CSS, JavaScript, TypeScript, SQL, MySQL Spring Boot, Angular,
-                        Bootstrap, Hybernate</p>
+                        <a href="https://github.com/LukSiman/ProjectManager" target="_blank">GitHub</a>
+                        <p class="mt-1"><b>Technologies:</b> Java, HTML, CSS, JavaScript, TypeScript, SQL, MySQL Spring
+                            Boot, Angular,
+                            Bootstrap, Hybernate</p>
+                    </div>
+                    <ngb-carousel class="border border-2 rounded">
+                        <ng-template ngbSlide *ngFor="let tempImage of images">
+                            <div class="p-2">
+                                <img src="{{tempImage}}" alt=" project image">
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
                 </div>
-                <ngb-carousel class="border border-2 rounded">
-                    <ng-template ngbSlide *ngFor="let tempImage of images">
-                        <div class="p-2">
-                            <img src="{{tempImage}}" alt=" project image">
-                        </div>
-                    </ng-template>
-                </ngb-carousel>
-            </div>
-        </ng-template>
-    </ngb-panel>
-</ngb-accordion>
+            </ng-template>
+        </ngb-panel>
+    </ngb-accordion>
+</div>
