@@ -23,22 +23,17 @@ ngb-carousel {
     filter: invert(1);
 }
 
-h1{
-    background-color: #ECEBE9;
-    color: #262225;
-}
-
-h2{
-    font-weight: bold;
-}
+// h2{
+//     font-weight: bold;
+// }
 
 :host ::ng-deep .accordion-body {
-    background-color: #ecebe95e;
+    background-color: #fafafa;
     color: #262225;
 }
 
 :host ::ng-deep .accordion-button{
-    background-color: #ECEBE9;
+    background-color: #fafafa;
     color: #262225;
 }
 

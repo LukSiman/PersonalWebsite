@@ -2,13 +2,13 @@ a {
     width: 32%;
     height: 2.5em;
     line-height: 2.5em;
-    color: #ECEBE9;
+    color: #fafafa;
     font-weight: bold;
     font-size: 1.2em;
     background-color: #29354B;
 
     &:hover {
-        color: #ECEBE9;
+        color: #fafafa;
         font-weight: bold;
         background-color: #4f5b74;
     }
@@ -18,7 +18,7 @@ a {
     }
 
     &:nth-child(2) {
-        border: 1px solid #ECEBE9;
+        border: 1px solid #fafafa;
         border-width: 0px 2px 0px 2px;
     }
 
@@ -28,7 +28,7 @@ a {
 }
 
 .active-link {
-    color: #ECEBE9;
+    color: #fafafa;
     font-weight: bold;
     background-color: #396f77;
 }
