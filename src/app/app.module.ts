@@ -15,10 +15,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmailService } from './services/email.service';
 
 const routes: Routes = [
-  { path: 'contacts', component: ContactPageComponent},
+  { path: 'contacts', component: ContactPageComponent },
   { path: 'projects', component: ProjectPageComponent },
-  { path: '', component: MainPageComponent},
-  { path: '**', component: MainPageComponent}
+  { path: '', component: MainPageComponent },
+  { path: '**', component: MainPageComponent }
 ];
 
 @NgModule({
